@@ -1,0 +1,27 @@
+let dolor =
+document.getElementById("dolor");
+
+let valorDolor =
+document.getElementById("valorDolor");
+
+dolor.addEventListener("input", function() {
+
+  valorDolor.textContent =
+  "Nivel actual: " + dolor.value;
+
+});
+
+document.getElementById("formulario")
+.addEventListener("submit", function(event) {
+
+  event.preventDefault();
+
+  let mensaje =
+  document.getElementById("mensaje");
+
+  mensaje.textContent =
+  "✅ Encuesta enviada correctamente";
+
+  mensaje.style.color = "green";
+
+});

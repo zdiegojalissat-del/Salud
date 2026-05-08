@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  width: 350px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+  animation: aparecer 0.7s ease;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #36d1dc;
+  box-shadow: 0px 0px 8px rgba(54,209,220,0.5);
+}
+
+input[type="range"] {
+  padding: 0;
+  margin-top: 10px;
+}
+
+#valorDolor {
+  text-align: center;
+  font-weight: bold;
+  color: #444;
+}
+
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #36d1dc;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #2aa9b3;
+  transform: scale(1.03);
+}
+
+#mensaje {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+}
